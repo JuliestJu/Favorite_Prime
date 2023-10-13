@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var state: AppState
+    
     var body: some View {
         NavigationView {
             List {
                 NavigationLink {
-                    EmptyView()
+                    CounterView(state: self.state)
                 } label: {
                     Text("Counter Demo")
                 }
@@ -28,5 +31,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(state: AppState())
 }

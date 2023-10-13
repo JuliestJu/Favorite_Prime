@@ -15,6 +15,7 @@
 		A35D32622AD96E90004A5775 /* Favorite_PrimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D32612AD96E90004A5775 /* Favorite_PrimeUITests.swift */; };
 		A35D32642AD96E90004A5775 /* Favorite_PrimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D32632AD96E90004A5775 /* Favorite_PrimeUITestsLaunchTests.swift */; };
 		A35D32722AD979D7004A5775 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D32712AD979D7004A5775 /* CounterView.swift */; };
+		A35D32752AD98121004A5775 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D32742AD98121004A5775 /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		A35D32612AD96E90004A5775 /* Favorite_PrimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite_PrimeUITests.swift; sourceTree = "<group>"; };
 		A35D32632AD96E90004A5775 /* Favorite_PrimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite_PrimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A35D32712AD979D7004A5775 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		A35D32742AD98121004A5775 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		A35D32452AD96E8F004A5775 /* Favorite_Prime */ = {
 			isa = PBXGroup;
 			children = (
+				A35D32732AD98102004A5775 /* AppState */,
 				A35D32702AD979C2004A5775 /* CounterView */,
 				A35D32462AD96E8F004A5775 /* Favorite_PrimeApp.swift */,
 				A35D32482AD96E8F004A5775 /* ContentView.swift */,
@@ -136,6 +139,14 @@
 				A35D32712AD979D7004A5775 /* CounterView.swift */,
 			);
 			path = CounterView;
+			sourceTree = "<group>";
+		};
+		A35D32732AD98102004A5775 /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				A35D32742AD98121004A5775 /* AppState.swift */,
+			);
+			path = AppState;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 				A35D32492AD96E8F004A5775 /* ContentView.swift in Sources */,
 				A35D32472AD96E8F004A5775 /* Favorite_PrimeApp.swift in Sources */,
 				A35D32722AD979D7004A5775 /* CounterView.swift in Sources */,
+				A35D32752AD98121004A5775 /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

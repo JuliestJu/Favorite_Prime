@@ -11,7 +11,7 @@ import SwiftUI
 struct Favorite_PrimeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(state: AppState())
         }
     }
 }

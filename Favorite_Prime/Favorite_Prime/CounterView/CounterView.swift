@@ -9,19 +9,19 @@ import SwiftUI
 
 struct CounterView: View {
     
-    @State var count: Int = 0
+    @ObservedObject var state: AppState
     
     var body: some View {
         VStack {
             HStack {
                 Button("-", action: {
-                    self.count -= 1
+                    self.state.count -= 1
                 })
                 Spacer()
-                Text("\(self.count)")
+                Text("\(self.state.count)")
                 Spacer()
                 Button("+", action: {
-                    self.count += 1
+                    self.state.count += 1
                 })
             }
             .padding([.leading, .trailing], 50)
@@ -29,7 +29,7 @@ struct CounterView: View {
             
             Group {
                 Button("Is this prime?", action: {})
-                Button("What is the \(self.ordinal(self.count)) prime?", action: {})
+                Button("What is the \(self.ordinal(self.state.count)) prime?", action: {})
             }
             .padding(8)
             .font(.title2)
@@ -45,5 +45,5 @@ struct CounterView: View {
 }
 
 #Preview {
-    CounterView()
+    CounterView(state: AppState())
 }
