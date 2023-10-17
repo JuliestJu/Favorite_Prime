@@ -10,4 +10,5 @@ import Foundation
 class AppState: ObservableObject {
     
     @Published var count: Int = 0
+    @Published var favoritePrimes: [Int] = []
 }

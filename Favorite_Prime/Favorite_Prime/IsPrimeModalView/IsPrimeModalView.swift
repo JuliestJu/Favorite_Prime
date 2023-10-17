@@ -15,11 +15,24 @@ struct IsPrimeModalView: View {
         if self.isPrime(self.state.count) {
             Text("\(self.state.count) is prime 🎉")
                 .font(.title)
-            Button(action: {}, label: {
-                Text("Save/remove to/from favorite primes")
-                    .font(.headline)
-                    .padding()
-            })
+            
+            if self.state.favoritePrimes.contains(self.state.count) {
+              Button(action: {
+                self.state.favoritePrimes.removeAll(where: { $0 == self.state.count })
+              }) {
+                Text("Remove from favorite primes")
+              }
+              .padding()
+            } else {
+              Button(action: {
+                self.state.favoritePrimes.append(self.state.count)
+              }) {
+                Text("Save to favorite primes")
+              }
+              .padding()
+            }
+           
+
         } else {
             Text("\(self.state.count) is not prime :(")
                 .font(.title)
