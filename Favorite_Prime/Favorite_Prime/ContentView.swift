@@ -20,7 +20,7 @@ struct ContentView: View {
                     Text("Counter Demo")
                 }
                 NavigationLink {
-                    EmptyView()
+                    FavoritePrimesView(state: self.state)
                 } label: {
                     Text("Favorite Primes")
                 }

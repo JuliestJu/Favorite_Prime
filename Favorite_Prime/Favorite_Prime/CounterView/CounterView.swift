@@ -43,7 +43,7 @@ struct CounterView: View {
             .padding(8)
             .font(.title2)
         }
-        .navigationTitle("CounterView")
+        .navigationTitle("Counter View")
         .sheet(isPresented: self.$isPrimeModalShown, onDismiss: {
             self.isPrimeModalShown = false
         }, content: {
@@ -55,7 +55,6 @@ struct CounterView: View {
             dismissButton: .default(Text("Ok"))
           )
         }
-      
     }
     
     private func ordinal(_ n: Int) -> String {
