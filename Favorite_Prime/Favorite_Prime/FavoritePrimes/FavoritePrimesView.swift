@@ -16,6 +16,9 @@ struct FavoritePrimesView: View {
             ForEach(self.state.favoritePrimes, id: \.self) { prime in
                 Text("\(prime)")
             }
+            .onDelete(perform: { indexSet in
+                indexSet.forEach { self.state.favoritePrimes.remove(at: $0)}
+            })
         }
         .navigationBarTitle("Favorite primes")
     }
