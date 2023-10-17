@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CounterView: View {
-    
+   
+    @State var isPrimeModalShown: Bool = false
     @ObservedObject var state: AppState
     
     var body: some View {
@@ -28,13 +29,20 @@ struct CounterView: View {
             .font(.largeTitle)
             
             Group {
-                Button("Is this prime?", action: {})
+                Button("Is this prime?", action: {
+                    self.isPrimeModalShown = true
+                })
                 Button("What is the \(self.ordinal(self.state.count)) prime?", action: {})
             }
             .padding(8)
             .font(.title2)
         }
         .navigationTitle("CounterView")
+        .sheet(isPresented: self.$isPrimeModalShown, onDismiss: {
+            self.isPrimeModalShown = false
+        }, content: {
+            IsPrimeModalView(state: self.state)
+        })
     }
     
     private func ordinal(_ n: Int) -> String {

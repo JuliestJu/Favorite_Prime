@@ -16,6 +16,7 @@
 		A35D32642AD96E90004A5775 /* Favorite_PrimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D32632AD96E90004A5775 /* Favorite_PrimeUITestsLaunchTests.swift */; };
 		A35D32722AD979D7004A5775 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D32712AD979D7004A5775 /* CounterView.swift */; };
 		A35D32752AD98121004A5775 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D32742AD98121004A5775 /* AppState.swift */; };
+		A35D32782AD98C05004A5775 /* IsPrimeModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D32772AD98C05004A5775 /* IsPrimeModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		A35D32632AD96E90004A5775 /* Favorite_PrimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite_PrimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A35D32712AD979D7004A5775 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		A35D32742AD98121004A5775 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A35D32772AD98C05004A5775 /* IsPrimeModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrimeModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		A35D32452AD96E8F004A5775 /* Favorite_Prime */ = {
 			isa = PBXGroup;
 			children = (
+				A35D32762AD98BDD004A5775 /* IsPrimeModalView */,
 				A35D32732AD98102004A5775 /* AppState */,
 				A35D32702AD979C2004A5775 /* CounterView */,
 				A35D32462AD96E8F004A5775 /* Favorite_PrimeApp.swift */,
@@ -147,6 +150,14 @@
 				A35D32742AD98121004A5775 /* AppState.swift */,
 			);
 			path = AppState;
+			sourceTree = "<group>";
+		};
+		A35D32762AD98BDD004A5775 /* IsPrimeModalView */ = {
+			isa = PBXGroup;
+			children = (
+				A35D32772AD98C05004A5775 /* IsPrimeModalView.swift */,
+			);
+			path = IsPrimeModalView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35D32782AD98C05004A5775 /* IsPrimeModalView.swift in Sources */,
 				A35D32492AD96E8F004A5775 /* ContentView.swift in Sources */,
 				A35D32472AD96E8F004A5775 /* Favorite_PrimeApp.swift in Sources */,
 				A35D32722AD979D7004A5775 /* CounterView.swift in Sources */,
